@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Img/work-experience_7390844.png">
+
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- JS de Bootstrap (Bundle incluye Popper) -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>My portfolio</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-image: url('Img/NEUMORPHIC_CIRCLES_BACKGROUND.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .contenido {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 15px;
+        } 
+
+        .form-control::placeholder {
+            color: #cccccc;
+            opacity: 1;
+        }
+
+        .service-card {
+            background-color: #212529;
+            border: 1px solid #343a40;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-icon {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="search-form">
+                    <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="hero-content text-light text-center" id="hero">
+            <h1>Hi, I am <span style="color: red;">Edwin Valdez</span></h1>
+            <p>
+                I am a front-end web designer. I can provide clean code and pixel perfect design. <br>
+                I also make website more & more interactive with web animations.
+            </p>
+            <div class="btn-group mt-4" role="group" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/edwxn_2/" target="_blank" class="btn">
+                    <i class="fab fa-instagram"></i>
+                    <img src="Img/icons8-instagram-48.png" alt="Instagram" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <img src="Img/icons8-whatsapp-48.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://github.com/edwin624" target="_blank" class="btn">
+                    <i class="fab fa-github"></i>
+                    <img src="Img/icons8-github-24.png" alt="GitHub" style="width: 24px; height: 24px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-dark text-white py-5 position-relative overflow-hidden" id="about">
+        <div class="d-flex flex-column align-items-center mb-5">
+            <h2 class="text-white fw-bold text-uppercase pb-2 border-bottom border-4 border-danger">ABOUT ME</h2>
+        </div>
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 d-flex justify-content-center mb-4 mb-lg-0">
+                    <img src="Img/550677997_24475271702141626_8223978552383395571_n.jpg" alt="Edwin Valdez Rodríguez" class="img-fluid rounded-3 shadow" style="max-width: 400px; max-height: 500px;">
+                </div>
+                <div class="col-lg-7 col-md-12 text-md-start text-center">
+                    <div class="p-lg-4">
+                        <h2 class="fs-1 fw-bold mb-3 text-white">Hi There! I'm <span style="color: red;">Edwin Valdez Rodríguez</span></h2>
+                        <p class="lead text-muted mb-4 text-white">
+                            <span class="text-white">I am a Visual Designer with a strong focus on digital branding. Visual design is my passion, and I love to take complex problems and transform it to relevant to meaningful, and a new to making a favorable impact.
+                        </p>
+                        <div class="text-muted mb-4 text-start">
+                            <div class="d-flex flex-column">
+                                <p class="mb-2"><strong class="text-white">Birthday:</strong> <span class="ms-2 text-white">Dic 22, 2008</span></p>
+                                <p class="mb-2"><strong class="text-white">Phone:</strong> <span class="ms-2 text-white">+1 800-708-2933</span></p>
+                                <p class="mb-2"><strong class="text-white">Email:</strong> <span class="ms-2 text-white">Edwinvr.og@gmail.com</span></p>
+                                <p class="mb-2"><strong class="text-white">From:</strong> <span class="ms-2 text-white">San Juan, Republica Dominicana</span></p>
+                                <p class="mb-2"><strong class="text-white">Language:</strong> <span class="ms-2 text-white">Spanish, English</span></p>
+                                <p class="mb-2"><strong class="text-white">Freelance:</strong> <span class="ms-2 text-white">Disabled</span></p>
+                            </div>
+                        </div>
+                        <a href="Img/icons8-github-24.png" class="btn btn-primary btn-lg rounded-3 fw-bold" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white py-5" id="services">
+        <div class="d-flex flex-column align-items-center mb-5">
+            <h2 class="text-white fw-bold text-uppercase pb-2 border-bottom border-4 border-danger">SERVICES</h2>
+        </div>
+        <div class="container my-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 text-center rounded-3">
+                        <img src="Img/book-open-reader-solid-full.svg" alt="Icono Sketches" class="service-icon mb-3">
+                        <h5 class="fw-bold">Sketches</h5>
+                        <p class="text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor elit, per sed do eiusmod tempor elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 text-center rounded-3">
+                        <img src="Img/desktop-solid-full.svg" alt="Icono UI/UX" class="service-icon mb-3">
+                        <h5 class="fw-bold">UI/UX Design</h5>
+                        <p class="text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor elit, per sed do eiusmod tempor elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 text-center rounded-3">
+                        <img src="Img/code-solid-full.svg" alt="Icono Product Design" class="service-icon mb-3">
+                        <h5 class="fw-bold">Product Design</h5>
+                        <p class="text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor elit, per sed do eiusmod tempor elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 text-center rounded-3">
+                        <img src="Img/mobile-screen-button-solid-full.svg" alt="Icono App Design" class="service-icon mb-3">
+                        <h5 class="fw-bold">App Design</h5>
+                        <p class="text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor elit, per sed do eiusmod tempor elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 text-center rounded-3">
+                        <img src="Img/film-solid-full.svg" alt="Icono Motion Graphics" class="service-icon mb-3">
+                        <h5 class="fw-bold">Motion Graphics</h5>
+                        <p class="text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor elit, per sed do eiusmod tempor elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 text-center rounded-3">
+                        <img src="Img/laptop-code-solid-full.svg" alt="Icono Responsive Design" class="service-icon mb-3">
+                        <h5 class="fw-bold">Responsive Design</h5>
+                        <p class="text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor elit, per sed do eiusmod tempor elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-white py-5" id="skills">
+        <div class="d-flex flex-column align-items-center mb-5">
+            <h2 class="text-white fw-bold text-uppercase pb-2 border-bottom border-4 border-danger">MY SKILLS</h2>
+        </div>
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="fw-bold">All the skills that I have in that field of work are mentioned.</h3>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Photoshop</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Motion Graphics</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="fw-bold">Adobe XD</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El script JavaScript para la funcionalidad de búsqueda interna -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchForm = document.getElementById('search-form');
+        const searchInput = document.getElementById('search-input');
+        
+        // Define las secciones de contenido para buscar (se les añadió un ID en el HTML)
+        const sectionsToSearch = [
+            document.getElementById('about'),
+            document.getElementById('services'),
+            document.getElementById('skills')
+        ];
+
+        searchForm.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const searchTerm = searchInput.value.trim().toLowerCase(); 
+            let foundMatch = false;
+
+            if (searchTerm === '') {
+                alert('Por favor, ingresa un término de búsqueda.');
+                return;
+            }
+
+            // Itera sobre cada sección para buscar el término
+            for (const section of sectionsToSearch) {
+                // Obtiene todo el texto de la sección
+                const sectionText = section.textContent.toLowerCase();
+                
+                if (sectionText.includes(searchTerm)) {
+                    // Si se encuentra una coincidencia, desplaza la vista a esa sección
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    
+                    // Opcional: Podrías añadir una clase temporal para resaltar
+                    //section.style.border = '2px solid yellow'; 
+
+                    foundMatch = true;
+                    break; // Detén la búsqueda después de encontrar la primera coincidencia
+                }
+            }
+
+            // Si no se encontró ninguna coincidencia después de revisar todas las secciones
+            if (!foundMatch) {
+                alert(`No se encontraron resultados para "${searchTerm}".`);
+            }
+        });
+    });
+    </script>
+</body>
+</html>
